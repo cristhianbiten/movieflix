@@ -14,9 +14,9 @@ public class UserResource {
     @Autowired
     private UserService service;
 
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<UserDTO> findById(@PathVariable Long id) {
-        UserDTO dto = service.findById(id);
+    @GetMapping(value = "/profile")
+    public ResponseEntity<UserDTO> currentUser() {
+        UserDTO dto = service.currentUser();
         return ResponseEntity.ok().body(dto);
     }
 }
