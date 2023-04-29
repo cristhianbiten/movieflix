@@ -45,6 +45,7 @@ public class MovieService {
 
     }
 
+    @Transactional(readOnly = true)
     public Page<MovieDTO> findAllPaged(Long genreId, Pageable pageable) {
         Optional<Genre> genre = (genreId == 0) ? null : genreRepository.findById(genreId);
         Genre genreResult = genre != null ? genre.orElse(null) : null;
