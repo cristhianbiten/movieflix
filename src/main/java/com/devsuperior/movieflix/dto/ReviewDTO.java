@@ -26,10 +26,10 @@ public class ReviewDTO implements Serializable {
     }
 
     public ReviewDTO(Review entity) {
-        this.id = entity.getId();
-        this.text = entity.getText();
-        this.movieId = new MovieDTO(entity.getMovie()).getId();
-        this.user = new UserDTO(entity.getUser());
+        id = entity.getId();
+        text = entity.getText();
+        movieId = new MovieDTO(entity.getMovie()).getId();
+        user = new UserDTO(entity.getUser());
     }
 
     public Long getId() {
