@@ -1,13 +1,10 @@
 package com.devsuperior.movieflix.dto;
 
-import com.devsuperior.movieflix.entities.Genre;
 import com.devsuperior.movieflix.entities.Movie;
 
 import java.io.Serializable;
-import java.util.List;
 
-
-public class MovieDTO implements Serializable {
+public class MovieAlternativeDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
@@ -15,35 +12,24 @@ public class MovieDTO implements Serializable {
     private String subTitle;
     private Integer year;
     private String imgUrl;
-    private String synopsis;
-    private GenreDTO genre;
 
-    public MovieDTO() {
-    }
+    public MovieAlternativeDTO() {}
 
-    public MovieDTO(Long id, String title, String subTitle, Integer year, String imgUrl, String synopsis) {
+    public MovieAlternativeDTO(Long id, String title, String subTitle, Integer year, String imgUrl) {
         this.id = id;
         this.title = title;
         this.subTitle = subTitle;
         this.year = year;
         this.imgUrl = imgUrl;
-        this.synopsis = synopsis;
     }
 
-    public MovieDTO(Movie entity) {
+    public MovieAlternativeDTO(Movie entity){
         id = entity.getId();
         title = entity.getTitle();
         subTitle = entity.getSubTitle();
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
-        synopsis = entity.getSynopsis();
     }
-
-    public MovieDTO(Movie entity, Genre genreEntity) {
-        this(entity);
-        genre = new GenreDTO(genreEntity);
-    }
-
 
     public Long getId() {
         return id;
@@ -83,21 +69,5 @@ public class MovieDTO implements Serializable {
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
-    }
-
-    public String getSynopsis() {
-        return synopsis;
-    }
-
-    public void setSynopsis(String synopsis) {
-        this.synopsis = synopsis;
-    }
-
-    public GenreDTO getGenre() {
-        return genre;
-    }
-
-    public void setGenre(GenreDTO genre) {
-        this.genre = genre;
     }
 }

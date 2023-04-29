@@ -1,5 +1,6 @@
 package com.devsuperior.movieflix.services;
 
+import com.devsuperior.movieflix.dto.MovieAlternativeDTO;
 import com.devsuperior.movieflix.dto.MovieDTO;
 import com.devsuperior.movieflix.dto.ReviewDTO;
 import com.devsuperior.movieflix.entities.Genre;
@@ -35,7 +36,7 @@ public class MovieService {
     public MovieDTO findById(Long id) {
         Optional<Movie> obj = repository.findById(id);
         Movie entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not Found"));
-        return new MovieDTO(entity);
+        return new MovieDTO(entity, entity.getGenre());
     }
 
     @Transactional(readOnly = true)
@@ -46,10 +47,10 @@ public class MovieService {
     }
 
     @Transactional(readOnly = true)
-    public Page<MovieDTO> findAllPaged(Long genreId, Pageable pageable) {
+    public Page<MovieAlternativeDTO> findAllPaged(Long genreId, Pageable pageable) {
         Optional<Genre> genre = (genreId == 0) ? null : genreRepository.findById(genreId);
         Genre genreResult = genre != null ? genre.orElse(null) : null;
         Page<Movie> page = repository.find(genreResult,  pageable);
-        return page.map(x -> new MovieDTO(x));
+        return page.map(x -> new MovieAlternativeDTO(x));
     }
 }
