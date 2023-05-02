@@ -29,7 +29,7 @@ Um usuário possui nome, email e senha, sendo que o email é seu nome de usuári
   
 # Listar filmes
 
-  [OUT] O sistema apresenta uma listagem dos nomes de todos gêneros, bem como uma listagem paginada com título, subtítulo, ano e imagem dos filmes, ordenada             alfabeticamente por título.
+  [OUT] O sistema apresenta uma listagem dos nomes de todos gêneros, bem como uma listagem paginada com título, subtítulo, ano e imagem dos filmes, ordenada alfabeticamente por título.
   
   [IN] O usuário visitante ou membro seleciona, opcionalmente, um gênero.
   
@@ -39,7 +39,7 @@ Um usuário possui nome, email e senha, sendo que o email é seu nome de usuári
 
   [IN] O usuário visitante ou membro seleciona um filme
   
-  [OUT] O sistema informa título, subtítulo, ano, imagem e sinopse do filme, e também uma listagem dos textos das avaliações daquele filme juntamente com nome do         usuário que fez cada avaliação.
+  [OUT] O sistema informa título, subtítulo, ano, imagem e sinopse do filme, e também uma listagem dos textos das avaliações daquele filme juntamente com nome do usuário que fez cada avaliação.
   
   [IN] O usuário membro informa, opcionalmente, um texto para avaliação do filme.
   
