@@ -87,7 +87,7 @@ cd movieflix
 ## Testes manuais
 Pré-requisitos: Postman
 
-[Collection do Postman](https://www.postman.com/collections/24466765-c8f1a7b9-7da2-472a-9945-0673d7d03798?action=collection%2Ffork&collection-url=entityId%3D24466765-c8f1a7b9-7da2-472a-9945-0673d7d03798%26entityType%3Dcollection%26workspaceId%3D28395882-d7b7-40d1-9fde-a03304ca0fc8)
+[Collection do Postman](https://www.postman.com/collections/24466765-372a7f85-26ec-483c-bddd-8fa1fa1154a7)
 
 
 # Autor
