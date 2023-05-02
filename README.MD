@@ -87,11 +87,7 @@ cd movieflix
 ## Testes manuais
 Pré-requisitos: Postman
 
-```bash
-# Obter o perfil do usuário logado
-GET /users/profile
-
-```
+[Collection do Postman](https://elements.getpostman.com/redirect?entityId=24466765-c8f1a7b9-7da2-472a-9945-0673d7d03798&entityType=collection)
 
 
 # Autor
