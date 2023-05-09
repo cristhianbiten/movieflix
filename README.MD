@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Projeto desenvolvido para o desafio do módulo de domínio, ORM e autorizações, e finalizado no módulo de consultas ao banco de dados do Bootcamp Spring da DevSuperior.
+Projeto desenvolvido para o desafio do módulo de domínio, ORM e autorizações, e finalizado no desafio do módulo de consultas ao banco de dados do Bootcamp Spring da DevSuperior.
 
 O projeto foi desenvolvido utilizando TDD, onde recebemos os testes e criamos a aplicação para que seja aprovada nos testes.
 
